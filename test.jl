@@ -1,5 +1,8 @@
-using Pkg; Pkg.activate(".")
-using TensorKit, Plots, JLD2
+using TensorKit, CUDA, cuTENSOR, JLD2
+const CUDAExt = Base.get_extension(TensorKit, :TensorKitCUDAExt)
+@assert !isnothing(CUDAExt)
+const CuTensorMap = getglobal(CUDAExt, :CuTensorMap)
+
 ## Model to simulate
 const ising_βc = BigFloat(log(BigFloat(1.0) + sqrt(BigFloat(2.0))) / BigFloat(2.0))
 function classical_ising_symmetric(β)
@@ -7,11 +10,11 @@ function classical_ising_symmetric(β)
     y = sinh(β)
 
     S = ℤ₂Space(0 => 1, 1 => 1)
-    T = zeros(Float64, S ⊗ S ← S ⊗ S)
+    T = zeros(S ⊗ S ← S ⊗ S)
     block(T, Irrep[ℤ₂](0)) .= [2x^2 2x * y; 2x * y 2y^2]
     block(T, Irrep[ℤ₂](1)) .= [2x * y 2x * y; 2x * y 2x * y]
-
-    return T
+    
+    return CuTensorMap(T)
 end
 classical_ising_symmetric() = classical_ising_symmetric(ising_βc)
 
@@ -22,7 +25,7 @@ end
 
 # SVD decomposition
 function SVD12(T, trunc)
-    U, s, V, e = tsvd(T; trunc = trunc)
+    U, s, V, e = svd_trunc(T; truncdim = trunc)
     return U * sqrt(s), sqrt(s) * V
 end
 
@@ -52,12 +55,12 @@ function run!(scheme, trunc, maxrg)
     return time() -t
 end
 
-χ_list = 8:8:64
+χ_list = 8:8:16
 t_data = zeros(length(χ_list))
 for (i,χ) in enumerate(χ_list)
     @info χ
-    scheme = TRG(classical_ising_symmetric())
-    t_data[i] = run!(scheme, truncdim(χ), 20)
+    scheme    = TRG(classical_ising_symmetric())
+    t_data[i] = run!(scheme, χ, 20)
 end
 
 save("time_data.jld2","chi",χ_list,"t",t_data)
