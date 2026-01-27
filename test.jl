@@ -26,9 +26,7 @@ end
 
 # SVD decomposition
 function SVD12(T, trunc)
-    CUDA.@allowscalar begin
-        U, s, V, e = svd_trunc(T; trunc = truncrank(trunc))
-    end
+    U, s, V, e = svd_trunc(T; trunc = truncrank(trunc))
     return U * sqrt(s), sqrt(s) * V
 end
 
@@ -58,7 +56,7 @@ function run!(scheme, trunc, maxrg)
     return time() -t
 end
 
-χ_list = 8:8:16
+χ_list = 8:8:64
 t_data = zeros(length(χ_list))
 for (i,χ) in enumerate(χ_list)
     @info χ
