@@ -15,6 +15,7 @@ function classical_ising_symmetric(β)
     block(T, Irrep[ℤ₂](1)) .= [2x * y 2x * y; 2x * y 2x * y]
     
     return CuTensorMap(T)
+    #return T
 end
 classical_ising_symmetric() = classical_ising_symmetric(ising_βc)
 
@@ -25,7 +26,9 @@ end
 
 # SVD decomposition
 function SVD12(T, trunc)
-    U, s, V, e = svd_trunc(T; truncdim = trunc)
+    CUDA.@allowscalar begin
+        U, s, V, e = svd_trunc(T; trunc = truncrank(trunc))
+    end
     return U * sqrt(s), sqrt(s) * V
 end
 
@@ -34,7 +37,7 @@ function step!(scheme::TRG, trunc)
     A, B = SVD12(scheme.T, trunc)
     Tp = transpose(scheme.T, ((2, 4), (1, 3)))
     C, D = SVD12(Tp, trunc)
-    @plansor scheme.T[-1 -2; -3 -4] := D[-2; 1 2] * B[-1; 4 1] * C[4 3; -3] * A[3 2; -4]
+    @tensor opt=true scheme.T[-1 -2; -3 -4] := D[-2; 1 2] * B[-1; 4 1] * C[4 3; -3] * A[3 2; -4]
     return scheme
 end
 
@@ -60,7 +63,7 @@ t_data = zeros(length(χ_list))
 for (i,χ) in enumerate(χ_list)
     @info χ
     scheme    = TRG(classical_ising_symmetric())
-    t_data[i] = run!(scheme, χ, 20)
+    t_data[i] = run!(scheme, χ, 10)
 end
 
 save("time_data.jld2","chi",χ_list,"t",t_data)
