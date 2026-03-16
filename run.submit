@@ -1,0 +1,37 @@
+# ======================
+JOBNAME = test_gpu
+UG_NAME = aueda
+
+request_gpus = 1 
+request_memory = 64 G
+request_disk = 10 G
+
+requirements = has_julia && (machine == "tensorval.ugent.be")
+
+nice_user = TRUE
+arguments = --project=. test.jl
+transfer_input_files = test.jl, Project.toml
+
+transfer_output_files = "time_data.jld2"
+# ======================
+
+should_transfer_files   = TRUE
+preserve_relative_paths = TRUE
+when_to_transfer_output = ON_EXIT
+
+output = condorlogs/$(JOBNAME)_$(JobId).out
+error  = condorlogs/$(JOBNAME)_$(JobId).err
+log    = condorlogs/dump.log
+
+environment = "HOME=/tmp/$(UG_NAME)"
+
+executable = /usr/local/bin/julia
+transfer_executable = FALSE
+
+# Send email on events (always, complete, error or never).
+# default: never
+notification = always
+notify_user = atsushi.ueda@ugent.be
+
+queue 1
+

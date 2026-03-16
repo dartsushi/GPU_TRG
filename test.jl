@@ -1,3 +1,6 @@
+using Pkg; Pkg.activate(".")
+Pkg.instantiate()
+
 using TensorKit, CUDA, cuTENSOR, JLD2
 const CUDAExt = Base.get_extension(TensorKit, :TensorKitCUDAExt)
 @assert !isnothing(CUDAExt)

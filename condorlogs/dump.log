@@ -1,0 +1,103 @@
+000 (5231.000.000) 2026-02-17 11:46:40 Job submitted from host: <157.193.72.74:9618?addrs=157.193.72.74-9618&alias=octopus.ugent.be&noUDP&sock=schedd_1666_50df>
+...
+040 (5231.000.000) 2026-02-17 11:46:40 Started transferring input files
+	Transferring to host: <157.193.228.32:9618?addrs=157.193.228.32-9618&alias=tensorval.ugent.be&noUDP&sock=slot1_6_3527791_a5fa_397>
+...
+040 (5231.000.000) 2026-02-17 11:46:40 Finished transferring input files
+...
+001 (5231.000.000) 2026-02-17 11:46:40 Job executing on host: <157.193.228.32:9618?addrs=157.193.228.32-9618&alias=tensorval.ugent.be&noUDP&sock=startd_3527696_9d01>
+	SlotName: slot1_6@tensorval.ugent.be
+	AvailableGPUs = {  }
+	CondorScratchDir = "/var/lib/condor/execute/dir_341768/scratch"
+	Cpus = 1
+	Disk = 10485760
+	GPUs = 0
+	Memory = 65536
+...
+006 (5231.000.000) 2026-02-17 11:46:49 Image size of job updated: 534472
+	418  -  MemoryUsage of job (MB)
+	428004  -  ResidentSetSize of job (KB)
+...
+006 (5231.000.000) 2026-02-17 11:48:57 Image size of job updated: 3163464
+	418  -  MemoryUsage of job (MB)
+	428004  -  ResidentSetSize of job (KB)
+...
+040 (5231.000.000) 2026-02-17 11:48:57 Started transferring output files
+...
+040 (5231.000.000) 2026-02-17 11:48:57 Finished transferring output files
+...
+021 (5231.000.000) 2026-02-17 11:48:57 Error from starter on slot1_6@tensorval.ugent.be:
+	STARTER at 157.193.228.32 failed to send file(s) to <157.193.72.74:9618>: |Error: 1 total failures: first failure: reading from file /var/lib/condor/execute/dir_341768/scratch/time_data.jld2: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <157.193.228.32:33989>
+	Code 13 Subcode 2
+...
+004 (5231.000.000) 2026-02-17 11:48:58 Job was evicted. Code 12 Subcode 2
+	(0) CPU times
+		Usr 0 00:06:23, Sys 0 00:00:35  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	2105  -  Run Bytes Received By Job
+	Reason: Transfer output files failure at execution point slot1_6@tensorval.ugent.be while sending files to access point octopus. Details: 1 total failures: first failure: reading from file /var/lib/condor/execute/dir_341768/scratch/time_data.jld2: (errno 2) No such file or directory
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :  3057581 10485760  10485760 
+	   GPUs                 :                           0 
+	   Memory (MB)          :      418    65536     65536 
+	   TimeExecute (s)      :      137                    
+	   TimeSlotBusy (s)     :      137                    
+...
+012 (5231.000.000) 2026-02-17 11:48:58 Job was held.
+	Transfer output files failure at execution point slot1_6@tensorval.ugent.be while sending files to access point octopus. Details: 1 total failures: first failure: reading from file /var/lib/condor/execute/dir_341768/scratch/time_data.jld2: (errno 2) No such file or directory
+	Code 12 Subcode 2
+...
+000 (5232.000.000) 2026-02-17 11:52:55 Job submitted from host: <157.193.72.74:9618?addrs=157.193.72.74-9618&alias=octopus.ugent.be&noUDP&sock=schedd_1666_50df>
+...
+000 (5238.000.000) 2026-02-17 12:38:45 Job submitted from host: <157.193.72.74:9618?addrs=157.193.72.74-9618&alias=octopus.ugent.be&noUDP&sock=schedd_1666_50df>
+...
+009 (5232.000.000) 2026-02-17 14:03:36 Job was aborted.
+	via condor_rm (by user aueda)
+...
+040 (5238.000.000) 2026-02-17 23:09:12 Started transferring input files
+	Transferring to host: <157.193.228.32:9618?addrs=157.193.228.32-9618&alias=tensorval.ugent.be&noUDP&sock=slot1_1_3527791_a5fa_423>
+...
+040 (5238.000.000) 2026-02-17 23:09:12 Finished transferring input files
+...
+001 (5238.000.000) 2026-02-17 23:09:12 Job executing on host: <157.193.228.32:9618?addrs=157.193.228.32-9618&alias=tensorval.ugent.be&noUDP&sock=startd_3527696_9d01>
+	SlotName: slot1_1@tensorval.ugent.be
+	AvailableGPUs = { GPUs_GPU_003c40e7 }
+	CondorScratchDir = "/var/lib/condor/execute/dir_533144/scratch"
+	Cpus = 1
+	Disk = 10485760
+	GPUs = 1
+	GPUs_GPU_003c40e7 = [ Id = "GPU-003c40e7"; Capability = 9.0; DeviceName = "NVIDIA H100 NVL"; DeviceUuid = "003c40e7-3564-2d23-76bf-9d27654fbf86"; ECCEnabled = true; NvidiaDriver = "580.126.09"; DriverVersion = 13.0; DevicePciBusId = "0000:89:00.0"; GlobalMemoryMb = 95319; MaxSupportedVersion = 13000 ]
+	Memory = 65536
+...
+006 (5238.000.000) 2026-02-17 23:09:21 Image size of job updated: 527484
+	458  -  MemoryUsage of job (MB)
+	468700  -  ResidentSetSize of job (KB)
+...
+006 (5238.000.000) 2026-02-17 23:14:07 Image size of job updated: 3844156
+	458  -  MemoryUsage of job (MB)
+	468700  -  ResidentSetSize of job (KB)
+...
+040 (5238.000.000) 2026-02-17 23:14:07 Started transferring output files
+...
+040 (5238.000.000) 2026-02-17 23:14:07 Finished transferring output files
+...
+005 (5238.000.000) 2026-02-17 23:14:08 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:08:27, Sys 0 00:01:20  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:08:27, Sys 0 00:01:20  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	26014  -  Run Bytes Sent By Job
+	2105  -  Run Bytes Received By Job
+	26014  -  Total Bytes Sent By Job
+	2105  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :  3057633 10485760  10485760 
+	   GPUs                 :                 1         1 "GPU-003c40e7"
+	   Memory (MB)          :      458    65536     65536 
+	   TimeExecute (s)      :      295                    
+	   TimeSlotBusy (s)     :      296                    
+...

@@ -1,0 +1,454 @@
+Precompiling packages...
+    399.1 ms  ✓ Preferences
+    308.3 ms  ✓ JLLWrappers
+    689.7 ms  ✓ CUDA_Driver_jll
+   1093.2 ms  ✓ CUDA_Runtime_jll
+  4 dependencies successfully precompiled in 3 seconds. 27 already precompiled.
+ Downloading artifact: CUDA_Runtime
+  Activating project at `/var/lib/condor/execute/dir_341768/scratch`
+  Installing known registries into `~/.julia`
+       Added `General` registry to ~/.julia/registries
+    Updating registry at `~/.julia/registries/General.toml`
+   Installed GPUArraysCore ─────────────── v0.2.0
+   Installed Crayons ───────────────────── v4.1.1
+   Installed Scratch ───────────────────── v1.3.0
+   Installed TaskLocalValues ───────────── v0.1.3
+   Installed Adapt ─────────────────────── v4.4.0
+   Installed LRUCache ──────────────────── v1.6.2
+   Installed JLD2 ──────────────────────── v0.6.3
+   Installed OhMyThreads ───────────────── v0.8.5
+   Installed IntegerMathUtils ──────────── v0.1.3
+   Installed demumble_jll ──────────────── v1.3.0+0
+   Installed Accessors ─────────────────── v0.1.43
+   Installed Preferences ───────────────── v1.5.1
+   Installed Revise ────────────────────── v3.13.2
+   Installed Zstd_jll ──────────────────── v1.5.7+1
+   Installed TableTraits ───────────────── v1.0.1
+   Installed Compiler ──────────────────── v0.1.1
+   Installed CUTENSOR_jll ──────────────── v2.4.1+0
+   Installed CUDA_Driver_jll ───────────── v13.1.0+2
+   Installed PtrArrays ─────────────────── v1.3.0
+   Installed PrettyTables ──────────────── v3.2.3
+   Installed cuTENSOR ──────────────────── v2.3.0
+   Installed GPUCompiler ───────────────── v1.8.2
+   Installed ChunkCodecLibZlib ─────────── v1.0.0
+   Installed TensorKit ─────────────────── v0.16.2
+   Installed LLVMLoopInfo ──────────────── v1.0.0
+   Installed SentinelArrays ────────────── v1.4.9
+   Installed JuliaInterpreter ──────────── v0.10.9
+   Installed LoweredCodeUtils ──────────── v3.5.0
+   Installed Tables ────────────────────── v1.12.1
+   Installed WignerSymbols ─────────────── v2.0.0
+   Installed DataAPI ───────────────────── v1.16.0
+   Installed HashArrayMappedTries ──────── v0.2.0
+   Installed PooledArrays ──────────────── v1.4.3
+   Installed InlineStrings ─────────────── v1.4.5
+   Installed Primes ────────────────────── v0.5.7
+   Installed AbstractFFTs ──────────────── v1.5.0
+   Installed ChunkSplitters ────────────── v3.2.0
+   Installed StaticArrays ──────────────── v1.9.16
+   Installed JLLWrappers ───────────────── v1.7.1
+   Installed ProgressMeter ─────────────── v1.11.0
+   Installed StaticArraysCore ──────────── v1.4.4
+   Installed Tracy ─────────────────────── v0.1.6
+   Installed ChunkCodecLibZstd ─────────── v1.0.0
+   Installed IteratorInterfaceExtensions ─ v1.0.0
+   Installed ConstructionBase ──────────── v1.6.0
+   Installed CUDA_Runtime_Discovery ────── v1.0.0
+   Installed CUDA_Compiler_jll ─────────── v0.4.1+1
+   Installed PrecompileTools ───────────── v1.3.3
+   Installed NVTX ──────────────────────── v1.0.3
+   Installed DataValueInterfaces ───────── v1.0.0
+   Installed LLVMExtra_jll ─────────────── v0.0.38+0
+   Installed RationalRoots ─────────────── v0.2.1
+   Installed NVTX_jll ──────────────────── v3.2.2+0
+   Installed OrderedCollections ────────── v1.8.1
+   Installed ChunkCodecCore ────────────── v1.0.1
+   Installed GPUToolbox ────────────────── v1.0.0
+   Installed StableTasks ───────────────── v0.1.7
+   Installed LaTeXStrings ──────────────── v1.4.0
+   Installed ScopedValues ──────────────── v1.5.0
+   Installed TensorKitSectors ──────────── v0.3.6
+   Installed VectorInterface ───────────── v0.5.0
+   Installed InitialValues ─────────────── v0.3.1
+   Installed CEnum ─────────────────────── v0.5.0
+   Installed InvertedIndices ───────────── v1.3.1
+   Installed FileIO ────────────────────── v1.18.0
+   Installed MatrixAlgebraKit ──────────── v0.6.4
+   Installed GPUArrays ─────────────────── v11.4.0
+   Installed Random123 ─────────────────── v1.7.1
+   Installed BFloat16s ─────────────────── v0.6.1
+   Installed Reexport ──────────────────── v1.2.2
+   Installed DataFrames ────────────────── v1.8.1
+   Installed RandomNumbers ─────────────── v1.6.0
+   Installed Statistics ────────────────── v1.11.1
+   Installed LibTracyClient_jll ────────── v0.13.1+0
+   Installed CUDA_Runtime_jll ──────────── v0.19.2+0
+   Installed DataStructures ────────────── v0.19.3
+   Installed CodeTracking ──────────────── v3.0.0
+   Installed Requires ──────────────────── v1.3.1
+   Installed KernelAbstractions ────────── v0.9.40
+   Installed StridedViews ──────────────── v0.4.3
+   Installed HalfIntegers ──────────────── v1.6.0
+   Installed Strided ───────────────────── v2.3.2
+   Installed PackageExtensionCompat ────── v1.0.2
+   Installed MacroTools ────────────────── v0.5.16
+   Installed BangBang ──────────────────── v0.4.8
+   Installed ExprTools ─────────────────── v0.1.10
+   Installed JuliaNVTXCallbacks_jll ────── v0.2.1+0
+   Installed Compat ────────────────────── v4.18.1
+   Installed CompositionsBase ──────────── v0.1.2
+   Installed InverseFunctions ──────────── v0.1.17
+   Installed UnsafeAtomics ─────────────── v0.3.0
+   Installed SortingAlgorithms ─────────── v1.2.2
+   Installed CUDA ──────────────────────── v5.9.6
+   Installed StringManipulation ────────── v0.4.2
+   Installed LLVM ──────────────────────── v9.4.6
+   Installed Missings ──────────────────── v1.2.0
+   Installed Atomix ────────────────────── v1.1.2
+   Installed TupleTools ────────────────── v1.6.0
+   Installed TensorOperations ──────────── v5.5.0
+  Installing 8 artifacts
+   Installed artifact JuliaNVTXCallbacks 8.6 KiB
+   Installed artifact demumble           322.0 KiB
+   Installed artifact NVTX               13.7 KiB
+   Installed artifact LibTracyClient     502.2 KiB
+   Installed artifact Zstd               646.0 KiB
+   Installed artifact LLVMExtra          2.8 MiB
+   Installed artifact CUDA_Compiler      125.2 MiB
+   Installed artifact CUDA_Driver        135.7 MiB
+    Updating `/var/lib/condor/execute/dir_341768/scratch/Project.toml`
+  [052768ef] + CUDA v5.9.6
+  [033835bb] + JLD2 v0.6.3
+  [92933f4c] + ProgressMeter v1.11.0
+  [295af30f] + Revise v3.13.2
+  [4db3bf67] + StridedViews v0.4.3
+  [07d1fe3e] + TensorKit v0.16.2
+  [011b41b2] + cuTENSOR v2.3.0
+    Updating `/var/lib/condor/execute/dir_341768/scratch/Manifest.toml`
+  [621f4979] + AbstractFFTs v1.5.0
+  [7d9f7c33] + Accessors v0.1.43
+  [79e6a3ab] + Adapt v4.4.0
+  [a9b6321e] + Atomix v1.1.2
+  [ab4f0b2a] + BFloat16s v0.6.1
+  [198e06fe] + BangBang v0.4.8
+  [fa961155] + CEnum v0.5.0
+  [052768ef] + CUDA v5.9.6
+  [1af6417a] + CUDA_Runtime_Discovery v1.0.0
+  [0b6fb165] + ChunkCodecCore v1.0.1
+  [4c0bbee4] + ChunkCodecLibZlib v1.0.0
+  [55437552] + ChunkCodecLibZstd v1.0.0
+  [ae650224] + ChunkSplitters v3.2.0
+  [da1fd8a2] + CodeTracking v3.0.0
+  [34da2185] + Compat v4.18.1
+  [807dbc54] + Compiler v0.1.1
+  [a33af91c] + CompositionsBase v0.1.2
+  [187b0558] + ConstructionBase v1.6.0
+  [a8cc5b0e] + Crayons v4.1.1
+  [9a962f9c] + DataAPI v1.16.0
+  [a93c6f00] + DataFrames v1.8.1
+  [864edb3b] + DataStructures v0.19.3
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [e2ba6199] + ExprTools v0.1.10
+  [5789e2e9] + FileIO v1.18.0
+  [0c68f7d7] + GPUArrays v11.4.0
+  [46192b85] + GPUArraysCore v0.2.0
+  [61eb1bfa] + GPUCompiler v1.8.2
+  [096a3bc2] + GPUToolbox v1.0.0
+  [f0d1745a] + HalfIntegers v1.6.0
+  [076d061b] + HashArrayMappedTries v0.2.0
+  [22cec73e] + InitialValues v0.3.1
+  [842dd82b] + InlineStrings v1.4.5
+  [18e54dd8] + IntegerMathUtils v0.1.3
+  [3587e190] + InverseFunctions v0.1.17
+  [41ab1584] + InvertedIndices v1.3.1
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [033835bb] + JLD2 v0.6.3
+  [692b3bcd] + JLLWrappers v1.7.1
+  [aa1ae85d] + JuliaInterpreter v0.10.9
+  [63c18a36] + KernelAbstractions v0.9.40
+  [929cbde3] + LLVM v9.4.6
+  [8b046642] + LLVMLoopInfo v1.0.0
+  [8ac3fa9e] + LRUCache v1.6.2
+  [b964fa9f] + LaTeXStrings v1.4.0
+  [6f1432cf] + LoweredCodeUtils v3.5.0
+  [1914dd2f] + MacroTools v0.5.16
+  [6c742aac] + MatrixAlgebraKit v0.6.4
+  [e1d29d7a] + Missings v1.2.0
+  [5da4648a] + NVTX v1.0.3
+  [67456a42] + OhMyThreads v0.8.5
+  [bac558e1] + OrderedCollections v1.8.1
+  [65ce6f38] + PackageExtensionCompat v1.0.2
+  [2dfb63ee] + PooledArrays v1.4.3
+  [aea7be01] + PrecompileTools v1.3.3
+  [21216c6a] + Preferences v1.5.1
+  [08abe8d2] + PrettyTables v3.2.3
+  [27ebfcd6] + Primes v0.5.7
+  [92933f4c] + ProgressMeter v1.11.0
+  [43287f4e] + PtrArrays v1.3.0
+  [74087812] + Random123 v1.7.1
+  [e6cf234a] + RandomNumbers v1.6.0
+  [308eb6b3] + RationalRoots v0.2.1
+  [189a3867] + Reexport v1.2.2
+  [ae029012] + Requires v1.3.1
+  [295af30f] + Revise v3.13.2
+  [7e506255] + ScopedValues v1.5.0
+  [6c6a2e73] + Scratch v1.3.0
+  [91c51154] + SentinelArrays v1.4.9
+  [a2af1166] + SortingAlgorithms v1.2.2
+  [91464d47] + StableTasks v0.1.7
+  [90137ffa] + StaticArrays v1.9.16
+  [1e83bf80] + StaticArraysCore v1.4.4
+  [10745b16] + Statistics v1.11.1
+  [5e0ebb24] + Strided v2.3.2
+  [4db3bf67] + StridedViews v0.4.3
+  [892a3eda] + StringManipulation v0.4.2
+  [3783bdb8] + TableTraits v1.0.1
+  [bd369af6] + Tables v1.12.1
+  [ed4db957] + TaskLocalValues v0.1.3
+  [07d1fe3e] + TensorKit v0.16.2
+  [13a9c161] + TensorKitSectors v0.3.6
+  [6aa20fa7] + TensorOperations v5.5.0
+  [e689c965] + Tracy v0.1.6
+  [9d95972d] + TupleTools v1.6.0
+  [013be700] + UnsafeAtomics v0.3.0
+  [409d34a3] + VectorInterface v0.5.0
+  [9f57e263] + WignerSymbols v2.0.0
+  [011b41b2] + cuTENSOR v2.3.0
+  [d1e2174e] + CUDA_Compiler_jll v0.4.1+1
+  [4ee394cb] + CUDA_Driver_jll v13.1.0+2
+⌅ [76a88914] + CUDA_Runtime_jll v0.19.2+0
+→ [35b6c64b] + CUTENSOR_jll v2.4.1+0
+  [9c1d0b0a] + JuliaNVTXCallbacks_jll v0.2.1+0
+  [dad2f222] + LLVMExtra_jll v0.0.38+0
+  [ad6e5548] + LibTracyClient_jll v0.13.1+0
+  [e98f9f5b] + NVTX_jll v3.2.2+0
+  [3161d3a3] + Zstd_jll v1.5.7+1
+  [1e29f10c] + demumble_jll v1.3.0+0
+  [0dad84c5] + ArgTools v1.1.2
+  [56f22d72] + Artifacts v1.11.0
+  [2a0f44e3] + Base64 v1.11.0
+  [ade2ca70] + Dates v1.11.0
+  [8ba89e20] + Distributed v1.11.0
+  [f43a241f] + Downloads v1.7.0
+  [7b1f6079] + FileWatching v1.11.0
+  [9fa8497b] + Future v1.11.0
+  [b77e0a4c] + InteractiveUtils v1.11.0
+  [ac6e5ff7] + JuliaSyntaxHighlighting v1.12.0
+  [4af54fe1] + LazyArtifacts v1.11.0
+  [b27032c2] + LibCURL v0.6.4
+  [76f85450] + LibGit2 v1.11.0
+  [8f399da3] + Libdl v1.11.0
+  [37e2e46d] + LinearAlgebra v1.12.0
+  [56ddb016] + Logging v1.11.0
+  [d6f4376e] + Markdown v1.11.0
+  [a63ad114] + Mmap v1.11.0
+  [ca575930] + NetworkOptions v1.3.0
+  [44cfe95a] + Pkg v1.12.1
+  [de0858da] + Printf v1.11.0
+  [3fa0cd96] + REPL v1.11.0
+  [9a3f8284] + Random v1.11.0
+  [ea8e919c] + SHA v0.7.0
+  [9e88b42a] + Serialization v1.11.0
+  [6462fe0b] + Sockets v1.11.0
+  [2f01184e] + SparseArrays v1.12.0
+  [f489334b] + StyledStrings v1.11.0
+  [fa267f1f] + TOML v1.0.3
+  [a4e569a6] + Tar v1.10.0
+  [cf7118a7] + UUIDs v1.11.0
+  [4ec0a83e] + Unicode v1.11.0
+  [e66e0078] + CompilerSupportLibraries_jll v1.3.0+1
+  [deac9b47] + LibCURL_jll v8.15.0+0
+  [e37daf67] + LibGit2_jll v1.9.0+0
+  [29816b5a] + LibSSH2_jll v1.11.3+1
+  [14a3606d] + MozillaCACerts_jll v2025.11.4
+  [4536629a] + OpenBLAS_jll v0.3.29+0
+  [458c3c95] + OpenSSL_jll v3.5.4+0
+  [bea87d4a] + SuiteSparse_jll v7.8.3+2
+  [83775a58] + Zlib_jll v1.3.1+2
+  [8e850b90] + libblastrampoline_jll v5.15.0+0
+  [8e850ede] + nghttp2_jll v1.64.0+1
+  [3f19e933] + p7zip_jll v17.7.0+0
+        Info Packages marked with → are not downloaded, use `instantiate` to download
+        Info Packages marked with ⌅ have new versions available but compatibility constraints restrict them from upgrading. To see why use `status --outdated -m`
+Precompiling packages...
+    325.6 ms  ✓ TaskLocalValues
+    323.4 ms  ✓ DataValueInterfaces
+    359.8 ms  ✓ LLVMLoopInfo
+    326.1 ms  ✓ InvertedIndices
+    338.4 ms  ✓ LaTeXStrings
+    311.3 ms  ✓ Reexport
+    342.1 ms  ✓ IntegerMathUtils
+    346.7 ms  ✓ Compiler
+    367.5 ms  ✓ StableTasks
+    400.0 ms  ✓ InverseFunctions
+    413.2 ms  ✓ LRUCache
+    442.1 ms  ✓ AbstractFFTs
+    432.3 ms  ✓ VectorInterface
+    550.6 ms  ✓ InlineStrings
+    309.3 ms  ✓ IteratorInterfaceExtensions
+    332.8 ms  ✓ PackageExtensionCompat
+    336.2 ms  ✓ DataAPI
+    360.5 ms  ✓ ExprTools
+    399.8 ms  ✓ Statistics
+    303.9 ms  ✓ CompositionsBase
+    334.1 ms  ✓ ChunkSplitters
+    301.4 ms  ✓ PtrArrays
+    382.3 ms  ✓ ChunkCodecCore
+    589.7 ms  ✓ ProgressMeter
+   1103.3 ms  ✓ HalfIntegers
+   1110.6 ms  ✓ OrderedCollections
+    343.0 ms  ✓ StaticArraysCore
+    620.4 ms  ✓ InitialValues
+    373.5 ms  ✓ TupleTools
+    589.0 ms  ✓ RandomNumbers
+    355.3 ms  ✓ RationalRoots
+    351.6 ms  ✓ HashArrayMappedTries
+   1079.4 ms  ✓ ConstructionBase
+   1088.8 ms  ✓ BFloat16s
+    870.0 ms  ✓ CUDA_Runtime_Discovery
+    499.4 ms  ✓ Requires
+    346.2 ms  ✓ Scratch
+   1344.3 ms  ✓ UnsafeAtomics
+    321.0 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+    993.3 ms  ✓ CEnum
+   1372.1 ms  ✓ Crayons
+    322.9 ms  ✓ LRUCache → SerializationExt
+    291.3 ms  ✓ TableTraits
+    435.4 ms  ✓ Primes
+    466.5 ms  ✓ Preferences
+    532.4 ms  ✓ CodeTracking
+    345.4 ms  ✓ StridedViews
+    377.1 ms  ✓ PooledArrays
+    920.1 ms  ✓ SentinelArrays
+    339.3 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+   1691.3 ms  ✓ MatrixAlgebraKit
+    363.7 ms  ✓ ChunkCodecLibZlib
+    308.0 ms  ✓ ScopedValues
+    408.0 ms  ✓ Statistics → SparseArraysExt
+    305.4 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    342.2 ms  ✓ Adapt
+    368.6 ms  ✓ Atomix
+    640.5 ms  ✓ Random123
+    332.1 ms  ✓ PrecompileTools
+    301.8 ms  ✓ StridedViews → StridedViewsPtrArraysExt
+   1105.3 ms  ✓ Compat
+    382.9 ms  ✓ JLLWrappers
+    393.2 ms  ✓ GPUArraysCore
+    416.6 ms  ✓ Adapt → AdaptSparseArraysExt
+   2133.6 ms  ✓ MacroTools
+   1027.4 ms  ✓ Missings
+    329.4 ms  ✓ Compat → CompatLinearAlgebraExt
+   1123.1 ms  ✓ DataStructures
+    461.5 ms  ✓ NVTX_jll
+    470.7 ms  ✓ LibTracyClient_jll
+    452.8 ms  ✓ JuliaNVTXCallbacks_jll
+    465.9 ms  ✓ demumble_jll
+    528.1 ms  ✓ Zstd_jll
+   1219.8 ms  ✓ Tables
+   1105.4 ms  ✓ Strided
+    381.5 ms  ✓ SortingAlgorithms
+   1034.1 ms  ✓ StringManipulation
+    400.4 ms  ✓ ChunkCodecLibZstd
+    975.2 ms  ✓ LLVMExtra_jll
+    668.7 ms  ✓ Tracy
+   1559.3 ms  ✓ WignerSymbols
+    711.4 ms  ✓ NVTX
+   1369.3 ms  ✓ CUDA_Driver_jll
+   2153.4 ms  ✓ FileIO
+   1859.5 ms  ✓ Accessors
+   1632.9 ms  ✓ TensorOperations
+    384.1 ms  ✓ Accessors → LinearAlgebraExt
+   3287.9 ms  ✓ JuliaInterpreter
+   1738.5 ms  ✓ CUDA_Runtime_jll
+    578.3 ms  ✓ BangBang
+    379.2 ms  ✓ BangBang → BangBangTablesExt
+   1256.9 ms  ✓ CUDA_Compiler_jll
+   1267.5 ms  ✓ OhMyThreads
+   1353.5 ms  ✓ CUTENSOR_jll
+   4582.0 ms  ✓ StaticArrays
+    445.0 ms  ✓ OhMyThreads → MarkdownExt
+    409.7 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+    409.0 ms  ✓ Adapt → AdaptStaticArraysExt
+    445.9 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    448.9 ms  ✓ Accessors → StaticArraysExt
+    469.0 ms  ✓ BangBang → BangBangStaticArraysExt
+   4541.7 ms  ✓ LLVM
+    840.7 ms  ✓ LLVM → BFloat16sExt
+    917.1 ms  ✓ GPUToolbox
+   1191.4 ms  ✓ UnsafeAtomics → UnsafeAtomicsLLVM
+   4660.0 ms  ✓ TensorKitSectors
+   4167.2 ms  ✓ LoweredCodeUtils
+   2689.2 ms  ✓ KernelAbstractions
+    478.0 ms  ✓ KernelAbstractions → LinearAlgebraExt
+    599.6 ms  ✓ KernelAbstractions → SparseArraysExt
+   3637.3 ms  ✓ GPUArrays
+  11056.7 ms  ✓ PrettyTables
+   5399.9 ms  ✓ TensorKit
+    440.4 ms  ✓ TensorKit → TensorKitAdaptExt
+   6659.6 ms  ✓ Revise
+    640.0 ms  ✓ Revise → DistributedExt
+  15575.6 ms  ✓ JLD2
+   1196.4 ms  ✓ GPUArrays → JLD2Ext
+  14905.6 ms  ✓ GPUCompiler
+  21363.2 ms  ✓ DataFrames
+   1363.6 ms  ✓ BangBang → BangBangDataFramesExt
+  22937.2 ms  ✓ CUDA
+   3249.3 ms  ✓ StridedViews → StridedViewsCUDAExt
+   3349.8 ms  ✓ MatrixAlgebraKit → MatrixAlgebraKitCUDAExt
+   3358.9 ms  ✓ Atomix → AtomixCUDAExt
+  11155.8 ms  ✓ cuTENSOR
+   3488.7 ms  ✓ TensorOperations → TensorOperationscuTENSORExt
+   3541.2 ms  ✓ TensorKit → TensorKitCUDAExt
+  128 dependencies successfully precompiled in 77 seconds. 36 already precompiled.
+  2 dependencies had output during precompilation:
+┌ TensorOperations
+│  ┌ Info: TensorOperations can optionally be instructed to precompile several functions, which can be used to reduce the time to first execution (TTFX).
+│  │ This is disabled by default as this can take a while on some machines, and is only relevant for contraction-heavy workloads.
+│  │ 
+│  │ To enable or disable precompilation, you can use the following script:
+│  │ 
+│  │ ```julia
+│  │ using TensorOperations, Preferences
+│  │ set_preferences!(TensorOperations, "precompile_workload" => true; force=true)
+│  │ ```
+│  │ 
+│  └ This will create a `LocalPreferences.toml` file next to your current `Project.toml` file to store this setting in a persistent way.
+└  
+┌ cuTENSOR
+│  Downloading artifact: CUTENSOR
+└  
+[ Info: 8
+ERROR: LoadError: CUDA initialization failed: CUDA error (code 100, CUDA_ERROR_NO_DEVICE)
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:44
+  [2] functional
+    @ ~/.julia/packages/CUDA/FJf6p/src/initialization.jl:24 [inlined]
+  [3] task_local_state!()
+    @ CUDA ~/.julia/packages/CUDA/FJf6p/lib/cudadrv/state.jl:77
+  [4] device
+    @ ~/.julia/packages/CUDA/FJf6p/lib/cudadrv/state.jl:189 [inlined]
+  [5] CuArray{Float64, 1, CUDA.DeviceMemory}(::UndefInitializer, dims::Tuple{Int64})
+    @ CUDA ~/.julia/packages/CUDA/FJf6p/src/array.jl:91
+  [6] CuArray
+    @ ~/.julia/packages/CUDA/FJf6p/src/array.jl:437 [inlined]
+  [7] CuArray
+    @ ~/.julia/packages/CUDA/FJf6p/src/array.jl:442 [inlined]
+  [8] CuArray
+    @ ~/.julia/packages/CUDA/FJf6p/src/array.jl:449 [inlined]
+  [9] TensorMap
+    @ ~/.julia/packages/TensorKit/qq3Pp/ext/TensorKitCUDAExt/cutensormap.jl:7 [inlined]
+ [10] classical_ising_symmetric(β::BigFloat)
+    @ Main /var/lib/condor/execute/dir_341768/scratch/test.jl:20
+ [11] classical_ising_symmetric
+    @ /var/lib/condor/execute/dir_341768/scratch/test.jl:23 [inlined]
+ [12] top-level scope
+    @ /var/lib/condor/execute/dir_341768/scratch/test.jl:66
+ [13] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [14] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:317
+ [15] _start()
+    @ Base ./client.jl:550
+in expression starting at /var/lib/condor/execute/dir_341768/scratch/test.jl:64
